@@ -79,7 +79,6 @@
 
 #마지막 번호 묻자
 import random
-
 last_number = input("마지막 번호는?")
 #1~마지막 번호까지 숫자 리스트 만들자
 list_class = list(range(1, int(last_number)+1))
@@ -97,6 +96,3 @@ random.shuffle(list_class)
 print('자리\t학생번호')
 for i, number in enumerate(list_class):
     print(f'{i+1}\t{number}')
-
-
-
