@@ -12,7 +12,8 @@ while True:
         print('숫자를 입력하세요.')
         continue
     if len(guess) != len(answer):
-        raise InvalidlengthError('정답의 길이와 다릅니다.')
+        print(f'정답의 길이와 다른 것을 입력했습니다.{len(answer)} 문자')
+        continue
 
 
 
