@@ -77,22 +77,24 @@
 # print(round(93, -1))
 # print(round(56, -1))
 
-#마지막 번호 묻자
-import random
-last_number = input("마지막 번호는?")
-#1~마지막 번호까지 숫자 리스트 만들자
-list_class = list(range(1, int(last_number)+1))
-#반복
-while True:
-    exclude_number = input("뺄 번호는?(enter 종료)")
-    if exclude_number == '':
-        break
-#빼자
-    list_class.remove(int(exclude_number))
-    print(list_class)
-#다 뺐으면 반복 끝내자
-#섞자
-random.shuffle(list_class)
-print('자리\t학생번호')
-for i, number in enumerate(list_class):
-    print(f'{i+1}\t{number}')
+# #마지막 번호 묻자
+# import random
+# last_number = input("마지막 번호는?")
+# #1~마지막 번호까지 숫자 리스트 만들자
+# list_class = list(range(1, int(last_number)+1))
+# #반복
+# while True:
+#     exclude_number = input("뺄 번호는?(enter 종료)")
+#     if exclude_number == '':
+#         break
+# #빼자
+#     list_class.remove(int(exclude_number))
+#     print(list_class)
+# #다 뺐으면 반복 끝내자
+# #섞자
+# random.shuffle(list_class)
+# print('자리\t학생번호')
+# for i, number in enumerate(list_class):
+#     print(f'{i+1}\t{number}')
+
+
