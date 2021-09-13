@@ -6,8 +6,15 @@ answer = make_answer()
 while True:
     guess = input("정답은?")
     # 숫자인지 아닌지 확인하자
-    guess_int = int(guess)
-    print(guess_int)
+    try:
+        guess_int = int(guess)
+    except ValueError as e:
+        print('숫자를 입력하세요.')
+        continue
+    if len(guess) != len(answer):
+        raise InvalidlengthError('정답의 길이와 다릅니다.')
+
+
 
 # strike, ball 판정하기
     strike, ball = check(guess, answer)
