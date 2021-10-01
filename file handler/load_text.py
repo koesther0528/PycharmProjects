@@ -20,3 +20,15 @@ lines = f.readlines()
 f.close()
 for line in lines:
     print(line.rstrip())
+
+f = open('text.txt', 'r', encoding='utf-8')
+lines = f.readlines()
+f.close()
+for line in lines:
+    print('이름:'+ line.rstrip()[:3]+"\t좋아하는 색:" + line.rstrip()[4:])
+    
+f = open('text.txt', 'r', encoding='utf-8')
+lines = f.readlines()
+f.close()
+for line in lines:
+    data = line.split(':')
